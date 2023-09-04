@@ -47,7 +47,7 @@ nav {
 }
 
 nav img {
-    max-height: 100px;
+    max-height: 80px;
 }
 
 nav .info {
@@ -233,7 +233,7 @@ section.projects article .links a {
     color: #650094;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     padding: 7px 20px;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -241,8 +241,7 @@ section.projects article .links a {
 }
 
 section.projects article .links a:hover {
-    background-color: #fcda59;
-    color: #000000;
+    background-color: #ffffff;
     transition: 300ms;
 }
 
@@ -281,7 +280,7 @@ footer .footer-links a {
 }
 
 footer .footer-links a:hover {
-    color: #fdd306;
+    color: #ffffff;
     transition: 300ms;
 }
 
