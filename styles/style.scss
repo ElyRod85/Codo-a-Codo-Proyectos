@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+* { font-family: 'Quicksand', sans-serif; box-sizing: border-box; scroll-behavior: smooth; }
+
+body { background-color: #1C1A38; color: #ffffff; margin: 0; }
+
+a { text-decoration: none; transition: 300ms;
+    &:hover { text-decoration: none; transition: 300ms; }
+}
+
+main { width: 90%; margin: 50px auto; padding-top: 10px; padding-bottom: 0; }
+
+
+
+/* Nav */
+
+nav { background-color: #fdd306; width: 100%; padding: 20px 40px;
+    display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; align-content: center;
+    img { max-height: 80px; }
+    .info { text-align: right; color: #1C1A38;
+        p.name { font-weight: 700; font-size: 22px; margin: 0; }
+        p.data { font-weight: 500; font-size: 18px; margin: 0; }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav { padding: 20px; flex-flow: column wrap; justify-content: center;
+        img { max-width: 90%; max-height: auto; }
+        .info { text-align: center; margin-top: 30px; }
+    }
+}
+
+
+
+/* Header */
+
+header { width: 80%; margin: 0 auto;
+    display: flex; flex-flow: row wrap; justify-content: space-around; align-items: center; align-content: center;
+    img { width: 30%; max-height: 100%; text-align: center; padding: 10px 20px; }
+    h1, h2 { font-weight: 700; text-align: center; }
+    h1 { width: 60%;  font-size: 38px;  padding: 10px 20px; }
+    h2 { width: 100%; font-size: 34px; padding: 40px 20px; color: #fcda59; }
+}
+
+@media screen and (max-width: 1200px) {
+    header { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+    header { width: 100%; flex-flow: column wrap;
+        img { width: 80%; max-height: 100%; }
+        h1 { width: 100%; font-size: 36px; padding: 30px 10px 10px 10px; }
+        h2 { font-size: 32px; padding: 20px 10px; }
+    }
+}
+
+
+
+/* Projects */
+
+section.projects { width: 100%; margin: 50px auto; padding: 0; color: #ffffff;
+    display: flex; flex-flow: row wrap; justify-content: space-around; align-items: stretch; align-content: stretch;
+    article { width: 30%; border-radius: 10px; background-color: #650094; color: #ffffff; 
+        p { padding: 20px; text-align: center; line-height: 1.5; font-size: 18px; }
+        img { width: 100%; height: 250px; margin: 0 auto 20px auto;
+            object-fit: cover; object-position: top;   
+        }
+        h3 { text-transform: uppercase; text-align: center; display: block;
+            font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px;
+            background: #fdd306; color: #000000;
+            background: linear-gradient(90deg, rgba(253,211,6,1) 0%, rgba(252,150,71,1) 100%);
+            padding: 10px; margin: 0;
+            border-radius: 10px 10px 0 0;
+        }
+        .links { width: 90%; margin: 10px auto 20px auto; gap: 20px;
+            display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; align-content: center;
+            i { padding-left: 5px; }
+            a { font-weight: 700; font-size: 16px; font-family: 'Montserrat', sans-serif;
+                background-color: #fdd306; color: #650094; border-radius: 5px;
+                text-transform: uppercase; letter-spacing: 1px;
+                padding: 7px 20px; transition: 300ms;
+                &:hover { background-color: #ffffff; transition: 300ms; }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    section.projects { gap: 50px;
+        article { width: 45%; }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.projects article { width: 100%; }
+}
+
+
+
+/* Footer */
+
+footer { background: #333333; color: #ffffff; font-weight: 500; font-size: 16px; letter-spacing: 1px;
+    width: 100%; margin: 100px auto 0 auto; padding: 10px 40px;
+    display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; align-content: center;
+    p { margin: 0; }
+    .footer-links { font-size: 30px; 
+        a { color: #fcda59; padding: 0 20px 0 0; transition: 300ms;
+            &:hover { color: #ffffff; transition: 300ms; }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer { flex-flow: column wrap; justify-content: center; gap: 10px; padding: 10px 20px;
+        p { text-align: center; }
+    }
+}
